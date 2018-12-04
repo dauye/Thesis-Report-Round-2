@@ -69,7 +69,7 @@ Empa,Dübendorf\\[2pt]}
 	Therefore, the purpose of this thesis is to find out the main causes of the performance gap in uninsulated buildings, as well as the most influential factors and input assumptions in building simulation. In addition, this thesis also aims to investigate how the resulting energy demand variations affect the performance gap.\\
 
 
-	Two uninsulated buildings, one residential and one office buildings, are carefully modeled and analyzed using different approaches including static calculation (SIA 380/1) which based on monthly average inputs, and dynamic simulation (EnergyPlus) which based on hourly timestep inputs initiative calculation method \cite{SIAPreviousreport,SIA2024Shop,crawley2000energy}. The buildings are firstly calibrated to match the historical measurement, then model input parameters are modified and the most influential factors can be identified.\\
+	Two uninsulated buildings, one residential and one office buildings, each is carefully modeled and analyzed using different approaches including static calculation (SIA 380/1) which based on monthly average inputs, and dynamic simulation (EnergyPlus) which is based on hourly timestep inputs initiative calculation method \cite{SIAPreviousreport,SIA2024Shop,crawley2000energy}. The buildings are firstly calibrated to match the historical measurement, then model input parameters are modified and the most influential factors can be identified.\\
 
 		\begin{figure}[!ht]
 		\centering
@@ -81,23 +81,23 @@ Empa,Dübendorf\\[2pt]}
 
 
 \chapter{Literature Review}
-	Over the past years, there is a large number of research paper about the building energy performance gap (BEPG). Performance gap can cause problems in energy management system as they provide inaccurate information to upstream energy suppliers or waste investments in buying over-capacity or under-capacity equipment. However, the root cause of this gap is not clearly identified, and the gap can not be effectively managed and eliminated \cite{FREI2017421}.\\
+	Over the past years, there is a large number of research papers about the building energy performance gap (BEPG). Performance gap can cause problems in energy management system as they provide inaccurate information to upstream energy suppliers or waste investments in buying over-capacity or under-capacity equipment. However, the root cause of this gap is not clearly identified, and the gap can not be effectively managed and eliminated \cite{FREI2017421}.\\
 	
-	According to a recent review about the building energy performance gap by Zou et al.\cite{ZOU2018165}, most of these research papers on the topic of performance gap would contain one or more of the following 5 elements: (1) building type, which can be classified into different groups such as residential, office, commercial, or even more specific types such as single-family house, multi-family house, shopping mall, hospital, prison, etc; (2) strategies for closing performance gap, which focus about design concept and technology dependent method (3) building life cycle, which analyses the cause of performance gap in different stages of a building; (4) energy-related stakeholders, whose behavior would affect the performance gap; (5) the influence factors or building parameters that would cause or affect the performance gap \cite{FREI2017421,ZOU2018165}.\\
+	According to a recent review about the building energy performance gap by Zou et al.\cite{ZOU2018165}, most of these research papers on the topic of performance gap would contain one or more of the following 5 elements: (1) building type, which can be classified into different groups such as residential, office, commercial, or even more specific types such as single-family house, multi-family house, shopping mall, hospital, prison, etc; (2) strategies for closing the performance gap, which focus about design concept and technology dependent method (3) building life cycle, which analyses the cause of performance gap in different stages of a building; (4) energy-related stakeholders, whose behavior would affect the performance gap; (5) the influence factors or building parameters that would cause or affect the performance gap \cite{FREI2017421,ZOU2018165}.\\
 	
 	\textbf{Formation of Performance Gap}\\
-		Most causes of performance gap can be grouped into 3 categories base on the stages in the building life-cycle. They are design and simulation problems, construction quality and technology-related problems by contractors and unexpected behaviors of building users \cite{userevaluations,NIU2016275}. These three categories are analysed below:\\
+		Most causes of performance gap can be grouped into 3 categories based on the stages in the building life-cycle. They are design and simulation problems, construction quality and technology-related problems by contractors and unexpected behaviors of building users \cite{userevaluations,NIU2016275}. These three categories are analysed below:\\
 		
 		\textbf{(1) Design and simulation problems}\\
 		Firstly, in most cases, building designers account for the wrong aspects in design and simulation processes. These include wrong assumptions and predictions about their design such as inaccurate building unheated area's temperature, wrong representation of user behavior, and wrong forecast of outdoor conditions \cite{NIU2016275,HOFFMANN201731}. Also, it is difficult to predict the future environment such as climate, weather, and solar activities, which can lead to huge performance gaps \cite{DIAZ2017393,doi:10.1080/19401493.2012.718797}. For example, rainfall would greatly increase the heat convection coefficient of building facade surface, and therefore increase heat exchange rate through the building envelope \cite{DIAZ2017393}. In addition, due to a difference between labotary environment and site environment, the performance of building materials or technologies in actual use is usually not the same as the lab test value. For example, a 5\% efficiency PV panel would be less than 5\% efficiency if covered with dusts or snow. Therefore, designers usually overestimate the actual performance of some innovated new building material or building control technologies and apply inappropriate assumptions about user behaviors \cite{DEWILDE201440}. \\
 
 		\textbf{(2) Contractors}\\
-		Secondly, construction practicers are also a cause for performance gaps. Low quality constructions lead to diviations between the actual building quality and the designed building quality. Poor building quality and poor workmanship will usually reduce the thermal performance and therefore change the building envelope from its designed state. For example, a room with less air-tightness than its design value would require more energy to maintain indoor comfort, and therefore consumes more energy than its designed and simulated results. Additionally, performance gap can be caused by contractors when they use improper construction techniques and when they are unable to discover hidden problems such as thermal bridge or small cracks due to time and budget constraints \cite{DEWILDE201440}. In some cases, these problems would lead to huge building parameter deviations and alter the building energy consumptions from the design value and create performance gaps \cite{FREI2017421,DEWILDE201440}.\\ 
+		Secondly, construction practicers are also a cause for performance gaps. Low quality constructions lead to deviations between the actual building quality and the designed building quality. Poor building quality and poor workmanship will usually reduce the thermal performance and therefore change the building envelope from its designed state. For example, a room with less air-tightness than its design value would require more energy to maintain indoor comfort, and therefore consumes more energy than its designed and simulated results. Additionally, performance gap can be caused by contractors when they use improper construction techniques and when they are unable to discover hidden problems such as thermal bridge or small cracks due to time and budget constraints \cite{DEWILDE201440}. In some cases, these problems would lead to huge building parameter deviations and alter the building energy consumptions from the design value and create performance gaps \cite{FREI2017421,DEWILDE201440}.\\ 
 
 		\textbf{(3) User Behaviors}\\
 		Lastly, as the last and main stage of building's life-cycle, different behaviors of building users are also important sources of performance gap \cite{ZOU2018165}. These behaviors, either deliberate or unconscious, are usually not the optimum ways to operate a building. Building owners or occupants have specific behaviors due to their social and personal characteristics, attitude, experience, and thermal comfort standard \cite{userevaluations,LAWRENCE2016651}. For example, users may leave unnecessary appliance on without notice or open the windows when heatings or cooling system is operating \cite{FREI2017421}. Therefore, if an ideal user behavior is used in the building simulations, the input value may not accurately represent the actual user behavior, and the simulation result will not accurately reflect the actual energy consumption and create a performance gap.\\
 
-	\section{Strategies For Closing Performance Gap} 
+	\section{Strategies For Closing The Performance Gap} 
 		When the causes of performance gap are found out, strategies for closing the gap can also need to be developed. These strategies are grouped into 2 categories, which are design concept and technology \& methods \cite{ZOU2018165}.
 
 		\subsection{Design Concept}
@@ -488,7 +488,7 @@ Empa,Dübendorf\\[2pt]}
 
 
 	\section{Selection of Simulation Tools}
-		Crawley and Hand et.al provided a comprehensive review on currently in-use building energy simulation tools back in 2008, and it include a brief review of EnergyPlus 1.2.2 and its basis building simulation tools \cite{crawley2008contrasting}. As EnergyPlus is compatible with building modeling software \textit{DesignBuilder}, it is more convenient to use it in this thesis comparing to other simulation tools. Additionally, as EnergyPlus is based on the features and capabilities of BLAST and DOE-2, these two tools are also briefly reviewed \cite{crawley2008contrasting}. However, the reviewed EnergyPlus version is more than 10 years old, it is believed that most of the functions have been updated and improved since then. \\
+		Crawley and Hand et.al provided a comprehensive review on currently in-use building energy simulation tools back in 2008, and it includes a brief review of EnergyPlus 1.2.2 and its basis building simulation tools \cite{crawley2008contrasting}. As EnergyPlus is compatible with building modeling software \textit{DesignBuilder}, it is more convenient to use it in this thesis comparing to other simulation tools. Additionally, as EnergyPlus is based on the features and capabilities of BLAST and DOE-2, these two tools are also briefly reviewed \cite{crawley2008contrasting}. However, the reviewed EnergyPlus version is more than 10 years old, it is believed that most of the functions have been updated and improved since then. \\
 
 		\textbf{Building BLAST}\\
 			The BLAST system predicts building energy consumption, building energy system performance and building costs \cite{crawley2008contrasting}. It contains three major subprograms: Space Loads Prediction, Air System Simulation, and Central Plant. \textit{Space Loads Prediction} computes hourly space loads based on the given hourly weather data, building construction properties and operation details. It uses a radiant, convective, and conductive heat balance for all surfaces and a heat balance of indoor air \cite{crawley2008contrasting}. The energy balance equations include heat transmission, solar loads, internal heat gains, air infiltration loads, and temperature control strategy used to manipulate the indoor temperature. BLAST can be used on new or existing buildings of almost any type and shape \cite{crawley2008contrasting}.\\
@@ -496,11 +496,11 @@ Empa,Dübendorf\\[2pt]}
 		\textbf{DOE-2.1E}\\
 			DOE-2 predicts hourly energy consumption and energy cost for a building based on the given weather information, building geometry, HVAC description, and utility cost. DOE-2 has one subprogram to translate input (BDL Processor), and four simulation subprograms namely \textit{Loads, Systems, Plant, and ECON (Economics)}.\\
 			\textit{Loads, Systems and Plant} are executed in sequence, with the output of the predecessor become the input of the next program in sequence. The output then becomes the input to \textit{Economics} \cite{crawley2008contrasting}. Each of the simulation subprograms can also generate printable reports of the results of its calculations.\\
-			DOE-2 has been used extensively for more than 35 years for both building design studeis, retrofit analysis, and for developing and testing building energy standards \cite{crawley2008contrasting}.\\
+			DOE-2 has been used extensively for more than 35 years for both building design studies, retrofit analysis, and for developing and testing building energy standards \cite{crawley2008contrasting}.\\
 		
 
 		\textbf{EnergyPlus}\\
-			\textit{EnergyPlus} is a modular and structured code based calculation engine. As mentioned above, it is based on the most popular features and functions of BLAST and DOE-2 and it is a more advanced tool compared to the previous two simulation engines. It is a simulation engine with input and output as text files. Loads are firstly calculated at a user-defined time step, then passed on to the building systems simulation module at the same time step \cite{crawley2008contrasting}. The EnergyPlus building system simulation module calculates heating and cooling system and plant and electrical system response. The integrated simulation also capable to evaluate realistic system controls, moisture adsorption and deorption in building elements, radiant heating and cooling system and interzone air flow \cite{crawley2008contrasting}.\\
+			\textit{EnergyPlus} is a modular and structured code based calculation engine. As mentioned above, it is based on the most popular features and functions of BLAST and DOE-2 and it is a more advanced tool compared to the previous two simulation engines. It is a simulation engine with input and output as text files. Loads are firstly calculated at a user-defined time step, then passed on to the building systems simulation module at the same time step \cite{crawley2008contrasting}. The EnergyPlus building system simulation module calculates heating and cooling system and plant and electrical system response. The integrated simulation also capable to evaluate realistic system controls, moisture adsorption and desorption in building elements, radiant heating and cooling system and interzone air flow \cite{crawley2008contrasting}.\\
 
 
 
@@ -660,10 +660,10 @@ Empa,Dübendorf\\[2pt]}
 
 
 			\textbf{SIA382 Weather File}\\
-				The full weather data is not fully accessible, and only the hourly temperature is obtained. However, the SIA 382 Weather File is only used to investigate the global warming effect in Zurich. The hourly stand weather temperature is used to replace the typical year weather temperature in the typical year weather file, while all other information remain the same as the 2015 weather data. The comparison between SIA 382 temperature and 2015 actual temperature \\ 
+				The full weather data is not fully accessible, and only the hourly temperature is obtained. However, the SIA 382 Weather File is only used to investigate the global warming effect in Zurich. The hourly stand weather temperature is used to replace the typical year weather temperature in the typical year weather file, while all other information remain the same as the 2015 weather data. The comparison between SIA 382 temperature and 2015 actual temperature is shown in Table \ref{tab:StaticWeatherCompare}.\\ 
 
 			\textbf{Urban Heat Island Weather File}\\
-				Similarly, heat island weather is created based on measured data in year 2015 and aimed to investigate the heat island effect of Zurich city. Firstly, the temperature difference between building site temperature and the weather station data is recorded and average temperature difference is taken hour by hour as shown in Figure \ref{fig:HeatIslandConst} below. Then, based on the statistic results in Figure \ref{fig:HeatIslandConst}, a simple urban temperature variation rule as shown in Figure \ref{fig:HeatIslandRule} is applied on the 2015 weather temperature for each hour and create a new heat island weather temperature. Lastly, the new heat island temperature is imported to the .\textit{epw} weather file and become the \textit{heat island weather file}.
+				Similarly, heat island weather is created based on measured data in year 2015 and aimed to investigate the heat island effect of Zurich city. Firstly, the temperature difference between building site temperature and the weather station data is recorded and average temperature difference is taken hour by hour as shown in Figure \ref{fig:HeatIslandConst} below. Then, based on the statistic results in Figure \ref{fig:HeatIslandConst}, a simple urban temperature variation rule as shown in Figure \ref{fig:HeatIslandRule} is applied on the 2015 weather temperature for each hour and a new heat island weather temperature. Lastly, the new heat island temperature is imported to the .\textit{epw} weather file and become the \textit{heat island weather file}.
 
 
 				\begin{figure}[H]
@@ -694,7 +694,7 @@ Empa,Dübendorf\\[2pt]}
 			In SIA 380/1 calculation, heat gains are obtained from solar radiations, internal gains by electronics, and internal gains by occupant activities. A detailed calculation formular set is also provided in Appendix \ref{sec:siacalculation}.\\
 			
 		\textbf{Measurements expected to close the performance gap}
-			The building model is firstly subject to static calculation with all standard values and assumptions. After the reference static calculation has been made, another calculation with 2015 weather information is conducted. Depend on the obtained result, further parameters are modified and try to match the calculation results with the measured annual results.
+			The building model is firstly subject to static calculation with all standard values and assumptions. After the reference static calculation has been made, another calculation with 2015 weather information is conducted. Depended on the obtained results, further parameters are modified and try to match the calculation results with the measured annual results.
 
 		
 	\section{Dynamic Calculation}
@@ -702,7 +702,7 @@ Empa,Dübendorf\\[2pt]}
 		
 		The occupancy schedule and activity level of all zones of the two buildings are from the SIA 2024 standard. The SIA 2024 standard provides a guideline assumptions for different building areas such as bedroom, bathroom, kitchen, office, and corridor.\\
 
-		The detailed information of is stored in separate .\textit{csv} files which contains 8760 entries of hourly data. Below is a list of information obtained from SIA 2024.
+		The detailed information is stored in separate .\textit{csv} files which contains 8760 entries of hourly data. Below is a list of information obtained from SIA 2024.
 
 	\begin{itemize}
 		\item Heating/Cooling Setpoint temperature ($^oC$)
@@ -788,7 +788,7 @@ Empa,Dübendorf\\[2pt]}
 			\makecell{Ventilation rates\\(m$^3$/h/person)} & \makecell{Normal distribution \\ $N(\mu,\sigma)$}      & \makecell{$\mu = \text{norminal value}$\\$\sigma=0.1 \cdot \mu$}                       \\
 			\hline
 			
-			\makecell{Thermostat setting\\($^oC$)} & \makecell{Normal distribution \\ $N(\mu,\sigma)$}      & \makecell{$\mu = \text{norminal value}$\\$\sigma= 1 ^oC$}\\
+			\makecell{Room Setpoints\\($^oC$)} & \makecell{Normal distribution \\ $N(\mu,\sigma)$}      & \makecell{$\mu = \text{norminal value}$\\$\sigma= 1 ^oC$}\\
 			\hline
 
 			\makecell{External heat transfer coefficient \\ (W/m$^2K$)} & \makecell{Uniform distribution \\ $N(a,b)$}      & \makecell{$a = 90\%\text{ norminal value}$\\$b = 110\% \text{ nominal value}$}\\
@@ -808,7 +808,7 @@ Empa,Dübendorf\\[2pt]}
 
 		\textit{Heating Temperature Setpoint}\\
 			All zones' heating setpoint temperature are part of the parameter variation. The heating setpoint temperature for the same category at the same floor are thought to be identical. For example, the heating setpoint temperature of \textit{Room2} and \textit{Room3} at the second floor would be the same, but might be different to the heating setpoint temperatues for \textit{Room2} and \textit{Room3} at third floor.\\
-			The heating temperature setpoint is at a normal distribution with mean value $\mu =$ nominal value and the diviation $\sigma = 1 ^oC$. The range of temperature setpoint samples in this thesis for each zones is shown in Figure \ref{fig:TempSetpoint}. The temperature setpoint is randomly created in a normal distribution with the given mean and standard deviation values.\\
+			The heating temperature setpoint is at a normal distribution with $\mu =$ nominal value and the diviation $\sigma = 1 ^oC$. The range of temperature setpoint samples in this thesis for each zones is shown in Figure \ref{fig:TempSetpoint}. The temperature setpoint is randomly created in a normal distribution with the given mean and standard deviation values.\\
 
 			\begin{figure}[H]
 			\centering
@@ -905,7 +905,7 @@ Empa,Dübendorf\\[2pt]}
 			\end{figure}
 			
 		\textit{Facade solar absorptance}\\
-			The facade paint and facade color determine the facade solar absorptance. It range from 0 to 1 where a 0 absorptance means the surface reflex all the energy onto the surface, and a 1 absorptance means the facade absorb all the solar energy onto the surface. In this analysis the solar absorptance vary between 0.2 to 0.9 at a discrete distribution.
+			The facade paint and facade color determine the facade solar absorptance. It range from 0 to 1 where a 0 absorptance means the surface reflects all the energy onto the surface, and a 1 absorptance means the facade absorb all the solar energy onto the surface. In this analysis the solar absorptance vary between 0.2 to 0.9 at a discrete distribution.
 
 	\section{Data Processing}
 		\textit{Python} and Excel are used in processing the results, where excel is used to generate histograms and other regular charts, while Python (with Matplotlib package) is used to merge data sets, process a series of data files, generate other irregular charts such as correlation matrix, and some boxplots.
@@ -944,7 +944,7 @@ Empa,Dübendorf\\[2pt]}
 		
 	\newpage		  
 	\section{Dynamic Simulation}		
-			The dynamic simulation results are shown below in Figure \ref{fig:Sumatra_EP} and Figure \ref{fig:Hongger_EP} below. Firstly, the simulation is run in 2015 weather conditions and with standard building envelope, which is shown in the first bar from the left. Secondly, the air change ratio is changed from 0.1 ACH to a more realistic value of 0.3 ACH, which is shown in the second bar from the left. Then, the third bar shows the results after SIA standard heat convection coefficient values are applied on the model. The result shows a close match between the calculated heating demand and the measured heating demand. It appears that both buildings can obtain a very close estimation when using these approaches. However, in order to further verify the building simulation methods and parameters, a building calibration is needed for both buildings.
+			The dynamic simulation results are shown below in Figure \ref{fig:Sumatra_EP} and Figure \ref{fig:Hongger_EP} below. Firstly, the simulation is run with 2015 weather conditions and with standard building envelope, which is shown in the first bar from the left. Secondly, the air change ratio is changed from 0.1 ACH to a more realistic value of 0.3 ACH, which is shown in the second bar from the left. Then, the third bar shows the results after SIA standard heat convection coefficient values are applied on the model. The result shows a close match between the calculated heating demand and the measured heating demand. It appears that both buildings can obtain a very close estimation when using these approaches. However, in order to further verify the building simulation methods and parameters, a building calibration is needed for both buildings.
 		
 
 		\begin{figure}[htbp]
@@ -968,7 +968,7 @@ Empa,Dübendorf\\[2pt]}
 	\newpage
 	\section{Calibration Results}
 
-			Figure \ref{fig:ACH_Compare} shows a comparison of average calculated indoor temperature from 1$^{st}$ June to 10$^{th}$ June in 2015 in the residential building under different air tightness (0.1/0.3/0.5 air change per hour infiltration level). The blue line with huge fluctuation represents the outdoor temperature from the weather station, the red line represents the measured indoor temperature, and the gray, orange, and orange line represent the calculated indoor temperature of the three rooms at the same apartment. The result indicates that the air infiltration dose not have a strong impact on indoor temperature profile. Therefore, the air infiltration is used to calibrate the annual heating demand to the measured value after the temperature profile is matched. The result also indicates that the simulated indoor temperatures are more fluctuated than the measured actual value, which is probably due to some wrong assumptions on building operations or user behavior.\\
+			Figure \ref{fig:ACH_Compare} shows a comparison of average calculated indoor temperature from 1$^{st}$ June to 10$^{th}$ June in 2015 in the residential building under different air tightness (0.1/0.3/0.5 air change per hour infiltration level). The blue line with huge fluctuation represents the outdoor temperature from the weather station, the red line represents the measured indoor temperature, and the gray, orange, and orange line represent the calculated indoor temperature of the three rooms of the same apartment. The result indicates that the air infiltration dose not have a strong impact on indoor temperature profile. Therefore, the air infiltration is used to calibrate the annual heating demand to the measured value after the temperature profile is matched. The result also indicates that the simulated indoor temperatures are more fluctuated than the measured actual value, which is probably due to some wrong assumptions on building operations or user behavior.\\
 		
 			\begin{figure}[H]
 			\centering
@@ -980,7 +980,7 @@ Empa,Dübendorf\\[2pt]}
 			\begin{figure}[H]
 			\centering
 			\includegraphics[scale=0.7]{figures/Hongg_Clibration_Origin.JPG}
-			\caption{Origin Temperature Profile of Residential Building}
+			\caption{Origin Temperature Profile of Three Rooms at the First Floor Apartment of the Residential Building (0.3 ACH)}
 			\label{fig:HonggCalibrationOrigin}
 			\end{figure}
 			
@@ -1002,7 +1002,7 @@ Empa,Dübendorf\\[2pt]}
 			\label{fig:HonggerCalibrationNoLight}
 			\end{figure}
 
-			Figure \ref{fig:HonggerCalibrationNoLight} above shows the temperature profile without lighting. The highly fluctuated blue line represents the outdoor temperature, the red line represents the actual measured data, and the orange, yellow, and light green lines represent  the calculated indoor temperature of three rooms. The result again indicated that the lighting schedule is the main cause of over-heating. Therefore, a new lighting schedule is created and rerun the simulation under a new lighting schedule. The new lighting schedule can be found in Table \ref{tab:HonggLightingCtrl} below.
+			Figure \ref{fig:HonggerCalibrationNoLight} above shows the temperature profile without lighting. The highly fluctuated blue line represents the outdoor temperature, the red line represents the actual measured data, and the orange, yellow, and light green lines represent  the calculated indoor temperature of three rooms. The result again indicated that the lighting schedule is the main cause of over-heating. Therefore, a new lighting schedule is created based on the average usage in reality, and another simulation was rerun under a new lighting schedule. The new lighting schedule can be found in Table \ref{tab:HonggLightingCtrl} below.
 			
         	\begin{table}[htbp]
         	\centering
@@ -1027,7 +1027,7 @@ Empa,Dübendorf\\[2pt]}
 			\begin{figure}[H]
 			\centering
 			\includegraphics[scale=0.7]{Hongg_Clibration_03NewLight.JPG}
-			\caption{Temperature Profile of Residential Building with New Lighting Schedule}
+			\caption{Temperature Profile of Residential Building with Real Lighting Schedule}
 			\label{fig:HonggerCalibrationNewLight}
 			\end{figure}
 			
@@ -1178,9 +1178,10 @@ Empa,Dübendorf\\[2pt]}
 
 
 \chapter{Discussion}
-    From the calculation and simulation results of the previous chapter, there are a few points that worth mentioning. For static calculation, the SIA 380/1 standard calculatiom method can achieve a reasonably accurate result when an updated weather information is implemented. The standard can probably consider using internal (net) area instead of external (gross) area for energy calculation, as it provides a more accurate results when net area (excluding walls) is used in calculation.\\
+    From the calculation and simulation results of the previous chapter, there are a few points that worth mentioning. For static calculation, the SIA 380/1 standard calculation method can achieve a reasonably accurate result when an updated weather information is implemented. In addition, the comparison of the calculation results from the internal (net) floor area and the external (gross) floor area showed that
+    The standard can probably consider using internal (net) area instead of external (gross) area for energy calculation, as it provides a more accurate results when net area (excluding walls) is used in calculation.\\
     
-    For dynamic simulation, weather information is also critical as varying the outdoor temperatuer can significantly change the resulting simulation heating demand. Also, a more accurate algorithm to simulate heat island effect is needed, as the temperature in city area can differ largely from the weather station's temperature even they are very close to each other. In addition, calibration process is important for analyzing the hourly building performance and gives more confidence in annual energy analyses.\\
+    For dynamic simulation, weather information is also critical as varying the outdoor temperature can significantly change the resulting simulation heating demand. Also, a more accurate algorithm to simulate heat island effect is needed, as the temperature in city area can differ largely from the weather station's temperature even they are very close to each other. In addition, calibration process is important for analyzing the hourly building performance and gives more confidence in annual energy analyses.\\
     
     At the current stage, it is known that the performance gap come from a number of wrong assumptions of building parameters and schedules. However, these wrong assumptions managed to achieve an internal balance and the combination of these current standard assumptions can indeed provide a reasonably accurate results in macroscopic scale (annual per square meter demand for example). For example, an over estimated heat convection coefficient may lead to a higher energy demand, but an over estimated internal loads would lead to a lower energy demand, and the effect of both over estimation cancel each other. To obtain true accuracy, review or modification are needed for not only a single parameters but also all the others. Improving a single assumption without considering others would even lead to more diverse and inaccurate results.\\
 
@@ -1191,7 +1192,7 @@ Empa,Dübendorf\\[2pt]}
 
     From the static calculation, the result shows that when applying net floor area and a more recent (2015) weather information from a nearby weather station in static calculation, the annual heating demand are macroscopically close to the measurement value. The results also indicates that the standard SIA 381/2 weather database provides information that is significantly different from the actual weather information in Zurich city. On average, the SIA 381/2 weather data is about 4 degrees lower than the recorded value in year 2015.\\
 
-    From the dynamic calculation, the result shows that the origin simulation has a much lower energy consumption than the measured value. This is partly because of a wrong assumption on building air-tightness. In addition, the performance gap on annual heating demand closes when using a high external convection coefficient (SIA standard value of 25 W/m.K), which indicates an probability of over-estimated internal loads.\\
+    From the dynamic calculation, the result shows that the origin EnergyPlus simulation showed a much lower energy consumption than the measured energy consumption. This is partly because of a wrong assumption on building air-tightness. In addition, the performance gap on annual heating demand is getting closer when the building envelope is less air-tight, which indicates a probability of over-estimated internal loads.\\
 
     The calibration processes have confirmed an over-estimation problem in internal loads, and discovered some previous unnoticed over-estimation problems in SIA 2024 lighting standards. The results indicates that the window blinds may be put down in summer for most of the time, and occupants are likely to open the window in un-heating period.\\
 

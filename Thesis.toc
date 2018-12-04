@@ -2,7 +2,7 @@
 \contentsline {chapter}{Abstract}{ii}{chapter*.2}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {chapter}{\numberline {2}Literature Review}{2}{chapter.2}
-\contentsline {section}{\numberline {2.1}Strategies For Closing Performance Gap}{3}{section.2.1}
+\contentsline {section}{\numberline {2.1}Strategies For Closing The Performance Gap}{3}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Design Concept}{3}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Technology and methods (T\&M)}{4}{subsection.2.1.2}
 \contentsline {section}{\numberline {2.2}Building Simulation Parameter Variation}{5}{section.2.2}
@@ -29,13 +29,13 @@
 \contentsline {section}{\numberline {4.1}Static Calculation}{34}{section.4.1}
 \contentsline {section}{\numberline {4.2}Dynamic Simulation}{36}{section.4.2}
 \contentsline {section}{\numberline {4.3}Calibration Results}{37}{section.4.3}
-\contentsline {section}{\numberline {4.4}Parameters Variation Results}{42}{section.4.4}
-\contentsline {section}{\numberline {4.5}Effect of Solar Absorptance on Heating Demand}{44}{section.4.5}
-\contentsline {section}{\numberline {4.6}Effect of Convection Coefficient on Heating Demand}{44}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Global Warming and Heat Island Effect}{45}{subsection.4.6.1}
-\contentsline {chapter}{\numberline {5}Discussion}{47}{chapter.5}
-\contentsline {chapter}{\numberline {6}Conclusion}{48}{chapter.6}
-\contentsline {chapter}{Bibliography}{49}{chapter*.4}
+\contentsline {section}{\numberline {4.4}Parameters Variation Results}{43}{section.4.4}
+\contentsline {section}{\numberline {4.5}Effect of Solar Absorptance on Heating Demand}{45}{section.4.5}
+\contentsline {section}{\numberline {4.6}Effect of Convection Coefficient on Heating Demand}{45}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Global Warming and Heat Island Effect}{46}{subsection.4.6.1}
+\contentsline {chapter}{\numberline {5}Discussion}{48}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusion}{49}{chapter.6}
+\contentsline {chapter}{Bibliography}{50}{chapter*.4}
 \contentsline {chapter}{\numberline {A}Assumptions}{A-1}{appendix.U}
 \contentsline {chapter}{\numberline {B}TARP Method Calculation}{B-1}{appendix.V}
 \contentsline {chapter}{\numberline {C}Static Calculation Formulas and Results}{C-1}{appendix.W}

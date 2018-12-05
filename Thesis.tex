@@ -1178,10 +1178,21 @@ Empa,Dübendorf\\[2pt]}
 
 
 \chapter{Discussion}
+    
+	
+	For static calculation, the change of weather information from standard data (SIA 380/1) to recorded data (2015) would introduce around 30\% drop in annual total heating demand, making outdoor temperature one of the most important factors in building simulation. In addition, it also indicates that there is a huge variation between the SIA 380 weather data and the actual weather data in 2015 (at least in Zurich regions). Therefore, an update to the weather information is needed.\\
+
+	By applying the net building area and accurate weather information (recorded from the above mentioned weather station), both building are able to achieve a much closer performance gap (about 2\% error) on macroscopic view. Although the exact mechanism to close the performance gap is unclear under monthly weather data static calculation, the approaches in Chapter 4.1 can significantly improve the accuracy of the annual heating demand. Therefore, these approaches are cost effective and efficient way to improve calculation results when further dynamic calculation is not supported or not applicable.\\
+
+
+	For dynamic simulation, as the geometry of buildings and the weather data comes from measurement, it is thought to be accurate. Therefore, a much lower energy consumption result indicates that either a lower energy loss assumption or a higher energy gain (solar gain and internal gain) assumption is assumed during the dynamic calculation. Although the annual heating consumption for both buildings can get very close to the measurement value by simply increasing ACH and convection coefficient to a certain value, it would be of more importance to investigate the root cause of this phenomenon by undergoing a calibration process.\\
+
+
+
     From the calculation and simulation results of the previous chapter, there are a few points that worth mentioning. For static calculation, the SIA 380/1 standard calculation method can achieve a reasonably accurate result when an updated weather information is implemented. In addition, the comparison of the calculation results from the internal (net) floor area and the external (gross) floor area showed that
     The standard can probably consider using internal (net) area instead of external (gross) area for energy calculation, as it provides a more accurate results when net area (excluding walls) is used in calculation.\\
     
-    For dynamic simulation, weather information is also critical as varying the outdoor temperature can significantly change the resulting simulation heating demand. Also, a more accurate algorithm to simulate heat island effect is needed, as the temperature in city area can differ largely from the weather station's temperature even they are very close to each other. In addition, calibration process is important for analyzing the hourly building performance and gives more confidence in annual energy analyses.\\
+    Heat Island: weather information is also critical as varying the outdoor temperature can significantly change the resulting simulation heating demand. Also, a more accurate algorithm to simulate heat island effect is needed, as the temperature in city area can differ largely from the weather station's temperature even they are very close to each other. In addition, calibration process is important for analyzing the hourly building performance and gives more confidence in annual energy analyses.\\
     
     At the current stage, it is known that the performance gap come from a number of wrong assumptions of building parameters and schedules. However, these wrong assumptions managed to achieve an internal balance and the combination of these current standard assumptions can indeed provide a reasonably accurate results in macroscopic scale (annual per square meter demand for example). For example, an over estimated heat convection coefficient may lead to a higher energy demand, but an over estimated internal loads would lead to a lower energy demand, and the effect of both over estimation cancel each other. To obtain true accuracy, review or modification are needed for not only a single parameters but also all the others. Improving a single assumption without considering others would even lead to more diverse and inaccurate results.\\
 

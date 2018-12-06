@@ -1198,6 +1198,7 @@ Empa,Dübendorf\\[2pt]}
 
 
 \chapter{Conclusion}
+    
     In conclusion, this thesis aims to reduce the deviation between calculated and measured heating demands and find the limitations and short-comings in SIA 380/1 calculation method. A residential building and an office building are accurately modeled and calculated using static calculation (SIA 180 standard calculation) method and dynamic calculation (EnergyPlus simulation engine) method. After the initial calculations based on pre-existing assumptions and standard values, both buildings are calibrated until the indoor temperature profile is matched. Then, both buildings are subjected to a large number of simulations with different parameters. Finally, the most influential building simulation parameters are found out by processing the results using different graphic representations approaches such as correlation matrix, histogram and scatter plots. \\
 
     From the static calculation, the result shows that when applying net floor area and a more recent (2015) weather information from a nearby weather station in static calculation, the annual heating demand are macroscopically close to the measurement value. The statistics from the 2015 recorded weather data also indicates that the standard SIA 2028, an update version to the old weather database SIA381/2, is still considered as outdated, as there is a considerably large deviations between these two weather files (at least in Zurich city). On average, the SIA 381/2 weather data is about 4 degrees lower than the recorded value in year 2015, and the SIA 2028 weather data is about 1.8 degrees lower than the recorded data in 2015.\\
@@ -1206,7 +1207,9 @@ Empa,Dübendorf\\[2pt]}
 
     The calibration processes have confirmed an over-estimation problem in internal loads, and discovered some previous unnoticed over-estimation problems in SIA 2024 lighting standards. The results also indicated that the window blinds might be put down in summer for most of the time, and occupants are likely to open the window in un-heating period.\\
 
-    Finally, the results from the building parameter variations indicate that the most influential parameters in simulation are key area temperature heating set points and external wall solar absorptance. Apart from them, infiltration and key area lighting schedules are also important factors to consider. As for \\
+    Additionally, the results from the building parameter variations indicate that the most influential parameters in simulation are key area temperature heating set points and external wall solar absorptance. Apart from them, infiltration and key area lighting schedules are also important factors to consider. Previously, it is believed that performance gap is mainly due to an over-estimated convection coefficient (mainly external), but results indicate that external convection coefficient would not stronly affect the energy demand results, unless there is a huge error exists in the assumption.\\
+
+    Finally, as outdoor environment largely affect the simulation results, global warming effect and heat island effect are also considered in this thesis.\\
 
     Considering the above mentioned and discussed findings, in order to obtain higher simulation accuracy and reduce the performance gap, it is recommended to create an accurate building envelope, spend more effort on observing and recording the typical user behavior and occupancy patterns, apply accurate outdoor environment such as site dry-bulb temperature and wind speed, as well as using a set of more comprehensive and representative lighting and electronic schedule and activity assumptions.
 

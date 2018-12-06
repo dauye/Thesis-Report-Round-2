@@ -40,7 +40,7 @@
 \contentsline {chapter}{\numberline {B}TARP Method Calculation}{B-1}{appendix.V}
 \contentsline {chapter}{\numberline {C}Static Calculation Formulas and Results}{C-1}{appendix.W}
 \contentsline {section}{\numberline {C.1}Heat Losses}{C-1}{section.W.1}
-\contentsline {section}{\numberline {C.2}Heat Gains}{C-2}{section.W.2}
-\contentsline {section}{\numberline {C.3}Total Heating Demand}{C-3}{section.W.3}
+\contentsline {section}{\numberline {C.2}Heat Gains}{C-3}{section.W.2}
+\contentsline {section}{\numberline {C.3}Total Heating Demand}{C-4}{section.W.3}
 \contentsline {section}{\numberline {C.4}Residential Building Heating Demand Breakdown}{C-4}{section.W.4}
 \contentsline {section}{\numberline {C.5}Office Building Heating Demand Breakdown}{C-6}{section.W.5}
